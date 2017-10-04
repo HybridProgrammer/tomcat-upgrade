@@ -5,7 +5,7 @@ cd $2
 DEST=`pwd`
 cd -
 
-[ -z "$VERSION" ] && VERSION="v8.5.20"
+[ -z "$VERSION" ] && VERSION="v8.5.21"
 [ -z "$2" ] && DEST=`pwd`
 
 mkdir -p staging

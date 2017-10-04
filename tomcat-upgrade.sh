@@ -5,7 +5,7 @@ cd $2
 DEST=`pwd`
 cd -
 
-[ -z "$VERSION" ] && VERSION="v8.5.21"
+[ -z "$VERSION" ] && VERSION="v8.5.23"
 [ -z "$2" ] && DEST=`pwd`
 
 mkdir -p staging
@@ -14,6 +14,8 @@ cd staging
 cd tomcat
 
 if [[ $1 == "list" ]] ;  then 
+	git checkout master
+	git pull
 	git tag
 	exit 0
 fi
